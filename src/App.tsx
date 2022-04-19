@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import IFeruemDesc from './components/IFeruemDesc/IFeruemDesc';
 import RoadMap from './components/RoadMap/RoadMap';
+import SideBar from './components/SideBar/SideBar';
 import WalletConnect from './components/WalletConnect/WalletConnect';
 
 const Wrap = styled.div`
@@ -25,6 +26,7 @@ function App() {
 
   return (
     <Wrap onClick={() => headerClicks()}>
+      <SideBar/>
       <Header lang={lang} setLang={setLang} setShowDD={setShowDD} showDD={showDD}/>
       <Banner/>
       <Benefits/>

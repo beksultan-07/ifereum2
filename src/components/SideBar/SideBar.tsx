@@ -2,15 +2,15 @@ import React from 'react'
 import { SideBarWrap, SideBarImgLink, SideBarImg } from './SideBarSC'
 
 const SideBar:React.FC = () => {
-    const Icon1 = require('../../assets/sidebar/Frame.svg')['default']
-    const Icon2 = require('../../assets/sidebar/Frame-1.svg')['default']
-    const Icon3 = require('../../assets/sidebar/Frame-2.svg')['default']
-    const Icon4 = require('../../assets/sidebar/Frame-3.svg')['default']
-    const Icon5 = require('../../assets/sidebar/Frame-4.svg')['default']
-    const Icon6 = require('../../assets/sidebar/Frame-5.svg')['default']
-    const Icon7 = require('../../assets/sidebar/Frame-6.svg')['default']
-    const Icon8 = require('../../assets/sidebar/Frame-7.svg')['default']
-    const Icon9 = require('../../assets/sidebar/Frame-8.svg')['default']
+    const Icon1 = require('../../assets/social medias/Frame.svg')['default']
+    const Icon2 = require('../../assets/social medias/Frame-1.svg')['default']
+    const Icon3 = require('../../assets/social medias/Frame-2.svg')['default']
+    const Icon4 = require('../../assets/social medias/Frame-3.svg')['default']
+    const Icon5 = require('../../assets/social medias/Frame-4.svg')['default']
+    const Icon6 = require('../../assets/social medias/Frame-5.svg')['default']
+    const Icon7 = require('../../assets/social medias/Frame-6.svg')['default']
+    const Icon8 = require('../../assets/social medias/Frame-7.svg')['default']
+    const Icon9 = require('../../assets/social medias/Frame-8.svg')['default']
 
 
 

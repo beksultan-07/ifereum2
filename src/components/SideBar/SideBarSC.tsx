@@ -24,10 +24,7 @@ export const SideBarImgLink = styled.a`
     }
 `
 
-const Icon1 = require('../../assets/sidebar/Frame.svg')['default']
 
 export const SideBarImg = styled.img`
     width: 33px;
-    :hover{
-    }
 `
