@@ -1,25 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import Banner from './components/Banner/Banner';
+import Benefits from './components/Benefits/Benefits';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import IFeruemDesc from './components/IFeruemDesc/IFeruemDesc';
+import RoadMap from './components/RoadMap/RoadMap';
+import WalletConnect from './components/WalletConnect/WalletConnect';
+
+const Wrap = styled.div`
+  background: url(${require('./assets/bg.jpg')}) 0 0 / cover;
+  height: 100%;
+`
 
 function App() {
+  const [lang, setLang] = React.useState('en')
+  const [showDD, setShowDD] = React.useState(false)
+
+  const [loaderState, setloaderState] = React.useState(false)
+
+  function headerClicks(){
+    setShowDD(false)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrap onClick={() => headerClicks()}>
+      <Header lang={lang} setLang={setLang} setShowDD={setShowDD} showDD={showDD}/>
+      <Banner/>
+      <Benefits/>
+      <WalletConnect/>
+      <IFeruemDesc/>
+      <RoadMap/>
+      <Footer/>
+    </Wrap>
   );
 }
 
