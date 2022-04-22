@@ -18,7 +18,10 @@ export const WCLeftWrap = styled.div`
     max-width: 480px;
     min-width: 420px;
     @media(max-width: 838px){
-        min-width: auto;
+        /* min-width: auto; */
+        max-width: 100%;
+        min-width: 100%;
+        margin: 0;
     }
 `
 
@@ -90,6 +93,7 @@ export const WCLBlock = styled.div`
 ` 
 
 export const WCLBlock2 = styled(WCLBlock)`
+    margin: 0 0 0 auto !important;
     :after{
         content: 'MetaUFO';
         color: #FFEE2D;
@@ -135,7 +139,8 @@ export const WCLInput = styled.input`
     font-size: 14px;
     line-height: 23px;
     color: #FFFFFF;
-
+    
+    
     ::placeholder{
         font-family: 'Inter';
         font-style: normal;
@@ -143,6 +148,12 @@ export const WCLInput = styled.input`
         font-size: 14px;
         line-height: 23px;
         color: #FFFFFF;
+    }
+    @media(max-width: 400px){
+        ::placeholder{
+            font-size: 12px;
+            
+        }
     }
 `
 
@@ -181,7 +192,7 @@ export const WCRightWrap = styled(WCLeftWrap)`
     /* height: 100%; */
     width: 100%;
     @media(max-width: 838px){
-        margin: 50px;
+        margin: 50px;WCLeftWrap
     }
 `
 

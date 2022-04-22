@@ -9,7 +9,7 @@ const WCLeft:React.FC = () => {
     const [activeSide, setActiveSide] = React.useState(true)
   return (
     <WCLeftWrap>
-        <Flex width='100%'>
+        <Flex width='100%' style={{minWidth: '280px'}}>
             <WCLBtn1 
                 activeBtn={activeSide} 
                 onClick={() => setActiveSide(true)}>
@@ -27,7 +27,8 @@ const WCLeft:React.FC = () => {
                     </PreTitle>
             </WCLBtn2>
         </Flex>
-        {activeSide?<IDO/>:<Airdrop/>}
+        {/* {activeSide?<IDO/>:<Airdrop/>} */}
+        <IDO/>
     </WCLeftWrap>
   )
 }
